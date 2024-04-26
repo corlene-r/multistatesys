@@ -36,14 +36,15 @@ function [] = plot_rooms(colors,outside_color)
     end
     rectangle('Position', [-2,-1,14,7],'FaceColor', outside_color)
     rectangle('Position', [0,0,5,5], 'FaceColor', colors(1,:))
-    text(2.5 , 2.5, 'A')
+    text(2.5 , 2.5, '1')
     rectangle('Position', [5,0,4,5], 'FaceColor', colors(2,:))
-    text(7, 3.75, 'B')
+    text(7, 3.75, '2')
     rectangle('Position', [5,0.5,2,2], 'FaceColor', colors(3,:))
-    text(6, 1.5, 'C')
+    text(6, 1.5, '3')
 %     xlim(-1,10)
 %     ylim(-1,6)
     set(gca,'xtick',[])
+    set(gca,'ytick',[])
 end
 
 function [c] = temp2color(t, t_max)
